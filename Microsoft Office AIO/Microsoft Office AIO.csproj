@@ -76,5 +76,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\2013\Install\" />
+    <Folder Include="Config\2013\Scripts\" />
+    <Folder Include="Config\2016\Config\" />
+    <Folder Include="Config\2016\Install\" />
+    <Folder Include="Office\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\2013\Config\Configure32.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Config\Configure64.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Config\File location.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

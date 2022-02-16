@@ -1,0 +1,17 @@
+<Configuration>
+<Add OfficeClientEdition="32">
+    <Product ID="ProjectStdRetail">
+      <Language ID="en-US" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
+<!--  OInstallSetting Branch=1  -->
+<!--  OInstallSetting Office=0  -->
+<!--  OInstallSetting Arch=0  -->
+<!--  OInstallSetting Redact=0  -->
+<!--  OInstallSetting Product=1  -->
+<!--  OInstallSetting UseODT=0  -->
+<!--  OInstallSetting OnlineKMS=1  -->
+<!--  OInstallSetting PATH=  -->
+<!--  OInstallSetting Lang0=1  -->

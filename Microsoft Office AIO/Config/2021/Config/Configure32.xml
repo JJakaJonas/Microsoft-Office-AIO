@@ -1,0 +1,83 @@
+<Configuration>
+<Add OfficeClientEdition="32" Channel="Current" Version="16.0.14701.20262">
+    <Product ID="HomeStudent2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Personal2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Standard2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="HomeBusiness2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Professional2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Proplus2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Word2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Excel2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Access2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="OutLook2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="OneNote2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="PowerPoint2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="Publisher2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="ProjectStd2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="ProjectPro2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="VisioStd2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+    <Product ID="VisioPro2021Retail">
+      <Language ID="en-US" />
+      <Language ID="da-DK" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+<Updates Enabled="TRUE" Channel="Current" />
+</Configuration>
+<!--  OInstallSetting Branch=1  -->
+<!--  OInstallSetting Office=0  -->
+<!--  OInstallSetting Arch=0  -->
+<!--  OInstallSetting Redact=0  -->
+<!--  OInstallSetting Product=1  -->
+<!--  OInstallSetting UseODT=0  -->
+<!--  OInstallSetting OnlineKMS=1  -->
+<!--  OInstallSetting PATH=  -->
+<!--  OInstallSetting Lang0=1  -->

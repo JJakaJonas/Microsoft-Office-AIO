@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,149 +100,432 @@
     <Content Include="Config\2013\Config\Configure64.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Config\2013\Config\File location.txt" />
-    <Content Include="Config\2013\Install\AccessRetail32DA.xml" />
-    <Content Include="Config\2013\Install\AccessRetail32EN.xml" />
-    <Content Include="Config\2013\Install\Configure32AIO.xml" />
-    <Content Include="Config\2013\Install\Configure64AIO.xml" />
-    <Content Include="Config\2013\Install\ExcelRetail32DA.xml" />
-    <Content Include="Config\2013\Install\ExcelRetail32EN.xml" />
-    <Content Include="Config\2013\Install\HomeBusinessRetail32DA.xml" />
-    <Content Include="Config\2013\Install\HomeBusinessRetail32EN.xml" />
-    <Content Include="Config\2013\Install\HomeStudentRetail32DA.xml" />
-    <Content Include="Config\2013\Install\HomeStudentRetail32EN.xml" />
-    <Content Include="Config\2013\Install\OneNoteRetail32DA.xml" />
-    <Content Include="Config\2013\Install\OneNoteRetail32EN.xml" />
-    <Content Include="Config\2013\Install\OutLookRetail32DA.xml" />
-    <Content Include="Config\2013\Install\OutLookRetail32EN.xml" />
-    <Content Include="Config\2013\Install\PersonalRetail32DA.xml" />
-    <Content Include="Config\2013\Install\PersonalRetail32EN.xml" />
-    <Content Include="Config\2013\Install\PowerPointRetail32DA.xml" />
-    <Content Include="Config\2013\Install\PowerPointRetail32EN.xml" />
-    <Content Include="Config\2013\Install\ProfessionalRetail32DA.xml" />
-    <Content Include="Config\2013\Install\ProfessionalRetail32EN.xml" />
-    <Content Include="Config\2013\Install\ProjectProRetail32DA.xml" />
-    <Content Include="Config\2013\Install\ProjectProRetail32EN.xml" />
-    <Content Include="Config\2013\Install\ProjectStdRetail32DA.xml" />
-    <Content Include="Config\2013\Install\ProjectStdRetail32EN.xml" />
-    <Content Include="Config\2013\Install\ProplusRetail32DA.xml" />
-    <Content Include="Config\2013\Install\ProplusRetail32EN.xml" />
-    <Content Include="Config\2013\Install\PublisherRetail32DA.xml" />
-    <Content Include="Config\2013\Install\PublisherRetail32EN.xml" />
-    <Content Include="Config\2013\Install\VisioProRetail32DA.xml" />
-    <Content Include="Config\2013\Install\VisioProRetail32EN.xml" />
-    <Content Include="Config\2013\Install\VisioStdRetail32DA.xml" />
-    <Content Include="Config\2013\Install\VisioStdRetail32EN.xml" />
-    <Content Include="Config\2013\Install\Word32DA.xml" />
-    <Content Include="Config\2013\Install\Word32EN.xml" />
-    <Content Include="Config\2016\Config\Configure32.xml" />
-    <Content Include="Config\2016\Config\Configure64.xml" />
-    <Content Include="Config\2016\Install\AccessRetail32DA.xml" />
-    <Content Include="Config\2016\Install\AccessRetail32EN.xml" />
-    <Content Include="Config\2016\Install\Configure32AIO.xml" />
-    <Content Include="Config\2016\Install\Configure64AIO.xml" />
-    <Content Include="Config\2016\Install\ExcelRetail32DA.xml" />
-    <Content Include="Config\2016\Install\ExcelRetail32EN.xml" />
-    <Content Include="Config\2016\Install\HomeBusinessRetail32DA.xml" />
-    <Content Include="Config\2016\Install\HomeBusinessRetail32EN.xml" />
-    <Content Include="Config\2016\Install\HomeStudentRetail32DA.xml" />
-    <Content Include="Config\2016\Install\HomeStudentRetail32EN.xml" />
-    <Content Include="Config\2016\Install\OneNoteRetail32DA.xml" />
-    <Content Include="Config\2016\Install\OneNoteRetail32EN.xml" />
-    <Content Include="Config\2016\Install\OutLookRetail32DA.xml" />
-    <Content Include="Config\2016\Install\OutLookRetail32EN.xml" />
-    <Content Include="Config\2016\Install\PersonalRetail32DA.xml" />
-    <Content Include="Config\2016\Install\PersonalRetail32EN.xml" />
-    <Content Include="Config\2016\Install\PowerPointRetail32DA.xml" />
-    <Content Include="Config\2016\Install\PowerPointRetail32EN.xml" />
-    <Content Include="Config\2016\Install\ProfessionalRetail32DA.xml" />
-    <Content Include="Config\2016\Install\ProfessionalRetail32EN.xml" />
-    <Content Include="Config\2016\Install\ProjectProRetail32DA.xml" />
-    <Content Include="Config\2016\Install\ProjectProRetail32EN.xml" />
-    <Content Include="Config\2016\Install\ProjectStdRetail32DA.xml" />
-    <Content Include="Config\2016\Install\ProjectStdRetail32EN.xml" />
-    <Content Include="Config\2016\Install\ProplusRetail32DA.xml" />
-    <Content Include="Config\2016\Install\ProplusRetail32EN.xml" />
-    <Content Include="Config\2016\Install\PublisherRetail32DA.xml" />
-    <Content Include="Config\2016\Install\PublisherRetail32EN.xml" />
-    <Content Include="Config\2016\Install\VisioProRetail32DA.xml" />
-    <Content Include="Config\2016\Install\VisioProRetail32EN.xml" />
-    <Content Include="Config\2016\Install\VisioStdRetail32DA.xml" />
-    <Content Include="Config\2016\Install\VisioStdRetail32EN.xml" />
-    <Content Include="Config\2016\Install\Word32DA.xml" />
-    <Content Include="Config\2016\Install\Word32EN.xml" />
-    <Content Include="Config\2019\Config\Configure32.xml" />
-    <Content Include="Config\2019\Config\Configure64.xml" />
-    <Content Include="Config\2019\Install\AccessRetail32DA.xml" />
-    <Content Include="Config\2019\Install\AccessRetail32EN.xml" />
-    <Content Include="Config\2019\Install\Configure32AIO.xml" />
-    <Content Include="Config\2019\Install\Configure64AIO.xml" />
-    <Content Include="Config\2019\Install\ExcelRetail32DA.xml" />
-    <Content Include="Config\2019\Install\ExcelRetail32EN.xml" />
-    <Content Include="Config\2019\Install\HomeBusinessRetail32DA.xml" />
-    <Content Include="Config\2019\Install\HomeBusinessRetail32EN.xml" />
-    <Content Include="Config\2019\Install\HomeStudentRetail32DA.xml" />
-    <Content Include="Config\2019\Install\HomeStudentRetail32EN.xml" />
-    <Content Include="Config\2019\Install\OneNoteRetail32DA.xml" />
-    <Content Include="Config\2019\Install\OneNoteRetail32EN.xml" />
-    <Content Include="Config\2019\Install\OutLookRetail32DA.xml" />
-    <Content Include="Config\2019\Install\OutLookRetail32EN.xml" />
-    <Content Include="Config\2019\Install\PersonalRetail32DA.xml" />
-    <Content Include="Config\2019\Install\PersonalRetail32EN.xml" />
-    <Content Include="Config\2019\Install\PowerPointRetail32DA.xml" />
-    <Content Include="Config\2019\Install\PowerPointRetail32EN.xml" />
-    <Content Include="Config\2019\Install\ProfessionalRetail32DA.xml" />
-    <Content Include="Config\2019\Install\ProfessionalRetail32EN.xml" />
-    <Content Include="Config\2019\Install\ProjectProRetail32DA.xml" />
-    <Content Include="Config\2019\Install\ProjectProRetail32EN.xml" />
-    <Content Include="Config\2019\Install\ProjectStdRetail32DA.xml" />
-    <Content Include="Config\2019\Install\ProjectStdRetail32EN.xml" />
-    <Content Include="Config\2019\Install\ProplusRetail32DA.xml" />
-    <Content Include="Config\2019\Install\ProplusRetail32EN.xml" />
-    <Content Include="Config\2019\Install\PublisherRetail32DA.xml" />
-    <Content Include="Config\2019\Install\PublisherRetail32EN.xml" />
-    <Content Include="Config\2019\Install\VisioProRetail32DA.xml" />
-    <Content Include="Config\2019\Install\VisioProRetail32EN.xml" />
-    <Content Include="Config\2019\Install\VisioStdRetail32DA.xml" />
-    <Content Include="Config\2019\Install\VisioStdRetail32EN.xml" />
-    <Content Include="Config\2019\Install\Word32DA.xml" />
-    <Content Include="Config\2019\Install\Word32EN.xml" />
-    <Content Include="Config\2021\Config\Configure32.xml" />
-    <Content Include="Config\2021\Config\Configure64.xml" />
-    <Content Include="Config\2021\Install\AccessRetail32DA.xml" />
-    <Content Include="Config\2021\Install\AccessRetail32EN.xml" />
-    <Content Include="Config\2021\Install\Configure32AIO.xml" />
-    <Content Include="Config\2021\Install\Configure64AIO.xml" />
-    <Content Include="Config\2021\Install\ExcelRetail32DA.xml" />
-    <Content Include="Config\2021\Install\ExcelRetail32EN.xml" />
-    <Content Include="Config\2021\Install\HomeBusinessRetail32DA.xml" />
-    <Content Include="Config\2021\Install\HomeBusinessRetail32EN.xml" />
-    <Content Include="Config\2021\Install\HomeStudentRetail32DA.xml" />
-    <Content Include="Config\2021\Install\HomeStudentRetail32EN.xml" />
-    <Content Include="Config\2021\Install\OneNoteRetail32DA.xml" />
-    <Content Include="Config\2021\Install\OneNoteRetail32EN.xml" />
-    <Content Include="Config\2021\Install\OutLookRetail32DA.xml" />
-    <Content Include="Config\2021\Install\OutLookRetail32EN.xml" />
-    <Content Include="Config\2021\Install\PersonalRetail32DA.xml" />
-    <Content Include="Config\2021\Install\PersonalRetail32EN.xml" />
-    <Content Include="Config\2021\Install\PowerPointRetail32DA.xml" />
-    <Content Include="Config\2021\Install\PowerPointRetail32EN.xml" />
-    <Content Include="Config\2021\Install\ProfessionalRetail32DA.xml" />
-    <Content Include="Config\2021\Install\ProfessionalRetail32EN.xml" />
-    <Content Include="Config\2021\Install\ProjectProRetail32DA.xml" />
-    <Content Include="Config\2021\Install\ProjectProRetail32EN.xml" />
-    <Content Include="Config\2021\Install\ProjectStdRetail32DA.xml" />
-    <Content Include="Config\2021\Install\ProjectStdRetail32EN.xml" />
-    <Content Include="Config\2021\Install\ProplusRetail32DA.xml" />
-    <Content Include="Config\2021\Install\ProplusRetail32EN.xml" />
-    <Content Include="Config\2021\Install\PublisherRetail32DA.xml" />
-    <Content Include="Config\2021\Install\PublisherRetail32EN.xml" />
-    <Content Include="Config\2021\Install\VisioProRetail32DA.xml" />
-    <Content Include="Config\2021\Install\VisioProRetail32EN.xml" />
-    <Content Include="Config\2021\Install\VisioStdRetail32DA.xml" />
-    <Content Include="Config\2021\Install\VisioStdRetail32EN.xml" />
-    <Content Include="Config\2021\Install\Word32DA.xml" />
-    <Content Include="Config\2021\Install\Word32EN.xml" />
+    <Content Include="Config\2013\Install\AccessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\AccessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\Configure32AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\Configure64AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ExcelRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ExcelRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\HomeBusinessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\HomeBusinessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\HomeStudentRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\HomeStudentRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\OneNoteRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\OneNoteRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\OutLookRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\OutLookRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PersonalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PersonalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PowerPointRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PowerPointRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProfessionalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProfessionalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProjectProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProjectProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProjectStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProjectStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProplusRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\ProplusRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PublisherRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\PublisherRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\VisioProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\VisioProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\VisioStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\VisioStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\Word32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2013\Install\Word32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Config\Configure32.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Config\Configure64.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\AccessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\AccessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\Configure32AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\Configure64AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ExcelRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ExcelRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\HomeBusinessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\HomeBusinessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\HomeStudentRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\HomeStudentRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\OneNoteRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\OneNoteRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\OutLookRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\OutLookRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PersonalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PersonalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PowerPointRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PowerPointRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProfessionalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProfessionalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProjectProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProjectProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProjectStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProjectStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProplusRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\ProplusRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PublisherRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\PublisherRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\VisioProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\VisioProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\VisioStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\VisioStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\Word32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2016\Install\Word32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Config\Configure32.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Config\Configure64.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\AccessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\AccessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\Configure32AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\Configure64AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ExcelRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ExcelRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\HomeBusinessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\HomeBusinessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\HomeStudentRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\HomeStudentRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\OneNoteRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\OneNoteRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\OutLookRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\OutLookRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PersonalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PersonalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PowerPointRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PowerPointRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProfessionalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProfessionalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProjectProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProjectProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProjectStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProjectStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProplusRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\ProplusRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PublisherRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\PublisherRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\VisioProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\VisioProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\VisioStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\VisioStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\Word32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2019\Install\Word32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Config\Configure32.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Config\Configure64.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\AccessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\AccessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\Configure32AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\Configure64AIO.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ExcelRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ExcelRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\HomeBusinessRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\HomeBusinessRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\HomeStudentRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\HomeStudentRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\OneNoteRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\OneNoteRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\OutLookRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\OutLookRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PersonalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PersonalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PowerPointRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PowerPointRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProfessionalRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProfessionalRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProjectProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProjectProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProjectStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProjectStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProplusRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\ProplusRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PublisherRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\PublisherRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\VisioProRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\VisioProRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\VisioStdRetail32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\VisioStdRetail32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\Word32DA.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\2021\Install\Word32EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

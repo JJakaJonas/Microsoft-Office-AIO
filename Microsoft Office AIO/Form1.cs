@@ -16,5 +16,16 @@ namespace Microsoft_Office_AIO
         {
             InitializeComponent();
         }
+        //Option to close the window from the tool strip
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        //Show the about box
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 a = new AboutBox1();
+            a.Show();
+        }
     }
 }

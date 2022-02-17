@@ -1,0 +1,8 @@
+<Configuration>
+<Add OfficeClientEdition="32">
+    <Product ID="OutLook2021Retail">
+      <Language ID="en-US" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>

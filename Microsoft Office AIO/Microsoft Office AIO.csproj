@@ -90,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Office\Add-on\2010\Don%27t put any files here" />
+    <None Include="Office\Add-on\Don%27t put any files here" />
+    <None Include="Office\Data\14.0.7015.1000\Don%27t put any files here" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

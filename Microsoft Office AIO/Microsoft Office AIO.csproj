@@ -90,9 +90,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Office\Add-on\2010\Don%27t put any files here" />
-    <None Include="Office\Add-on\Don%27t put any files here" />
-    <None Include="Office\Data\14.0.7015.1000\Don%27t put any files here" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,7 +148,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Office\Add-on\2007\Read me!.txt" />
-    <Content Include="Office\Add-on\2010\x64\Read me!.txt" />
+    <Content Include="Office\Add-on\2010\x64\Read me!.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Office\Add-on\2010\x86\Read me!.txt" />
     <Content Include="Office\Data\12.0.6607.1000\Read me!.txt" />
     <Content Include="Office\Data\14.0.7015.1000\x64\Read me!.txt" />

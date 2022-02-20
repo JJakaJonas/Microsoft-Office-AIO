@@ -1,0 +1,9 @@
+Put wsusoffline files here
+
+Last supported versions
+
+Office 2003     2014-04-08    9.2.1 / 9.2.x ESR
+https://download.wsusoffline.net/wsusoffline921.zip
+
+Office 2007     2017-10-10   11.0.3 / 9.2.x ESR
+https://download.wsusoffline.net/wsusoffline1103.zip

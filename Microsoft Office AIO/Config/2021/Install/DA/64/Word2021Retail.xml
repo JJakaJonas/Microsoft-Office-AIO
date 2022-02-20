@@ -1,5 +1,5 @@
 <Configuration>
-<Add OfficeClientEdition="32" Channel="Current">
+<Add OfficeClientEdition="64">
     <Product ID="Word2021Retail">
       <Language ID="da-DK" />
     </Product>

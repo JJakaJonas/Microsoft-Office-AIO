@@ -1,0 +1,8 @@
+<Configuration>
+<Add OfficeClientEdition="64">
+    <Product ID="ProjectStd2021Retail">
+      <Language ID="da-DK" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>

@@ -1,9 +1,0 @@
-<Configuration>
-<Add OfficeClientEdition="32">
-    <Product ID="Word2019Retail">
-      <Language ID="da-DK" />
-    </Product>
-</Add>
-<Display Level="Full" AcceptEULA="TRUE" />
-<Updates Enabled="TRUE" Channel="Current" />
-</Configuration>

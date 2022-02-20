@@ -1,8 +1,0 @@
-<Configuration>
-<Add OfficeClientEdition="32">
-    <Product ID="HomeBusiness2019Retail">
-      <Language ID="en-US" />
-    </Product>
-</Add>
-<Display Level="Full" AcceptEULA="TRUE" />
-</Configuration>

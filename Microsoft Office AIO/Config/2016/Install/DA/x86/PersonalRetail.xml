@@ -1,0 +1,8 @@
+<Configuration>
+<Add OfficeClientEdition="32">
+    <Product ID="PersonalRetail">
+      <Language ID="da-DK" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>

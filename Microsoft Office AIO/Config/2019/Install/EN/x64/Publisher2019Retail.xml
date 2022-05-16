@@ -1,0 +1,8 @@
+<Configuration>
+<Add OfficeClientEdition="64">
+    <Product ID="Publisher2019Retail">
+      <Language ID="en-US" />
+    </Product>
+</Add>
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
